@@ -1,0 +1,120 @@
+#!/bin/env python3 
+
+import random
+import time
+import os
+
+#FOR ANYONE TRYING TO READ THROUGH THIS MESS, LOL GOOD LUCK
+#Ps. no seriously, good luck
+
+tlist=[]
+ttls=[]
+flag=0
+
+def createlist(ran):
+    tlist=[]
+    for r in range(ran):
+        tlist.append(random.randrange(ran))
+    return tlist
+
+def checker(lenc):
+    bog="?-"
+    tls=createlist(int(lenc))
+    for l in tls:
+    	bog=str(bog)+str(l)
+    tls.sort()
+    tl="!-"
+    for l in tls:
+        tl=str(tl)+str(l)
+    sortlevel="                        "
+    sp=0
+    if (bog[2] < bog[3]):
+       sortlevel="||||                    "
+       sp=20
+       flag = "0"+str(bog)+sortlevel+str(int(sp))
+       if (bog[3] < bog[4]):
+           sortlevel="||||||||                "
+           sp=sp+20
+           flag = "0"+str(bog)+sortlevel+str(int(sp))
+           if (bog[4] < bog[5]):
+               sortlevel="||||||||||||            "
+               sp=sp+20
+               flag = "0"+str(bog)+sortlevel+str(int(sp))
+               if (bog[5] < bog[6] ):
+                   sortlevel="||||||||||||||||        "
+                   sp=sp+20
+                   flag = "0"+str(bog)+sortlevel+str(int(sp))
+                   if (bog[6] < bog[7] ):
+                       sortlevel="||||||||||||||||||||    "
+                       sp=sp+20
+                       flag = "0"+str(bog)+sortlevel+str(int(sp))
+                       if (bog[7] < bog[8] ):
+                           sortlevel="||||||||||||||||||||||||"
+                           sp=100
+                           flag ="1"+str(bog)+sortlevel+str(int(sp))
+    else:
+         flag = "0"+str(bog)+sortlevel+str(int(sp))+str(int(sp))
+    return flag
+
+def main():
+    timed=0
+    times=0
+    timem=0
+    timeh=0
+    while True:
+        times=times+0.1
+        if int(times)>=60:
+            timem=timem+1
+            times=0
+            if int(timem)>=60:
+               timeh=timeh+1
+               timem=0
+               if int(timeh) >= 24:
+                   timed=timed+1
+                   timeh=0
+        elt=str(timed)+"days "+str(timeh)+"h:"+str(timem)+"m:"+str(int(times))+"s"
+        length=7
+        tls=createlist(int(length))
+        f=checker(int(length))
+        if f[0] == "1":
+            time.sleep(0.1)
+            os.system("clear")
+            print("CTRL-C TO EXIT","                              Elapsed time:",elt)
+            print("		  ","     _                             ")
+            print("		  "," ___| |__   ___   __ _  ___        ")
+            print("		  ","/ __| '_ \ / _ \ / _` |/ _ \       ")
+            print("		  ","\__ \ |_) | (_) | (_| | (_) |      ")
+            print("		  ","|___/_.__/ \___/ \__, |\___/       ")
+            print("		  ","                 |___/             ")
+            print("			  A crappy python bogosort program")
+            print("\n","[+] SORTED   ", list(f[3:9]), "sortlevel [",f[10:24],"]",f[34:],"%")
+            break
+        else:
+            time.sleep(0.1)
+            os.system("clear")
+            print("CTRL-C TO EXIT","                              Elapsed time:",elt)
+            print("		  ","     _                             ")
+            print("		  "," ___| |__   ___   __ _  ___        ")
+            print("		  ","/ __| '_ \ / _ \ / _` |/ _ \       ")
+            print("		  ","\__ \ |_) | (_) | (_| | (_) |      ")
+            print("		  ","|___/_.__/ \___/ \__, |\___/       ")
+            print("		  ","                 |___/             ")
+            print("			  A crappy python bogosort program")
+            #print("			                           by c1nn3r")
+            print("\n \n \n", "[+] UNSORTED " ,list(f[3:9]), "sortlevel [",f[10:24],"]",f[34:],"%")
+        
+main()
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
