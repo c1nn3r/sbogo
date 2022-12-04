@@ -23,17 +23,17 @@ cd sbogo/
 pip3 install -r requirements.txt
 ./sbogo
 ```
-**lol, have fun
+*lol, have fun*
 
 ### FAQS
 
 Nobody asked for these but..
 
-1.Whats the point of this program?
+1. Whats the point of this program?
   - Nothing,LITERALLY
-2.What can i use this for?
+2. What can i use this for?
   - For anything more than a means to waste time and resources,I dont know
-3.Your code sucks, and it makes me wanna throw up
+3. Your code sucks, and it makes me wanna throw up
   - Thanks, that makes the two of us.
 
 ##### ps, feel free add colors and stuff,lets rice this thing
