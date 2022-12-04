@@ -18,10 +18,12 @@ i will not take any responsiblities if you end up at some nerd rehab lol
 why? but anyways...
 
 '''shell
+
 git clone 
 cd sbogo/
 pip3 install -r requirements.txt
 ./sbogo
+
 '''
 lol, have fun
 
@@ -30,8 +32,8 @@ lol, have fun
 Nobody asked for these but..
 
 1.Whats the point of this program?
-- Nothing,LITERALLY
+ - Nothing,LITERALLY
 2.What can i use this for?
-- For anything more than a means to waste time and resources,I dont know
+ - For anything more than a means to waste time and resources,I dont know
 3.Your code sucks, and it makes me wanna throw up
-- Thanks, that makes the two of us.
+ - Thanks, that makes the two of us.
