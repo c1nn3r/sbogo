@@ -3,6 +3,8 @@
 This is a poc program made in 30 minutes, tried to keep it as light as possible except for the usual 
 figlet banner and crappy nested if else statements.
 
+![sbogo cli](https://user-images.githubusercontent.com/119784145/205490989-327b3da8-5cbd-41f2-b9ea-55f5c5bbfd5b.png)
+
 ## What is bogosort?
 
 Honestly if you are on this repo, theres a 200% chance that you know this already and you searched for it, but in a nutshell bogosorting is a "method" of sorting an array by randomly shuffling the contents
@@ -36,4 +38,4 @@ Nobody asked for these but..
 3. Your code sucks, and it makes me wanna throw up
   - Thanks, that makes the two of us.
 
-##### ps, feel free add colors and stuff,lets rice this thing
+##### ps, feel free add colors and stuff, rice this thing
